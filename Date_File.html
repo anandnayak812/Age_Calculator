@@ -166,6 +166,34 @@
                 font-size: 1.2em;
             }
         }
+
+        /* Ensure the date picker works */
+        input[type="date"] {
+            -webkit-appearance: none; /* Remove native styling in Webkit browsers */
+            -moz-appearance: none;    /* Remove native styling in Firefox */
+            appearance: none;         /* General reset for other browsers */
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            font-size: 1.1em;
+            text-align: center;
+            border-radius: 8px;
+            border: 2px solid #fffa;
+            transition: all 0.3s ease;
+        }
+
+        input[type="date"]:focus {
+            border-color: #FFD700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        /* Optional: Style for better appearance on webkit-based browsers */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            background-color: #FFD700;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
     </style>
 </head>
 <body>
